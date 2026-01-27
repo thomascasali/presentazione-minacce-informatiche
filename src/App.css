@@ -181,7 +181,7 @@
 }
 
 .slide-inner {
-  max-width: 1000px;
+  max-width: min(1000px, 90vw);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1239,5 +1239,284 @@
 
   .stat-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+/* ========== LARGE DESKTOP (1400px+) ========== */
+@media (min-width: 1400px) {
+  .slide-inner {
+    max-width: 1200px;
+  }
+
+  .slide {
+    padding: 3rem 4rem 5.5rem;
+  }
+
+  .slide-inner {
+    gap: 1.8rem;
+  }
+
+  .slide-title {
+    font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+  }
+
+  .slide-text {
+    font-size: 1.35rem;
+    line-height: 1.8;
+  }
+
+  .slide-badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .slide-list li {
+    font-size: 1.25rem;
+    gap: 1rem;
+  }
+
+  .slide-list li .list-icon {
+    font-size: 1.4rem;
+  }
+
+  .info-box {
+    padding: 2rem;
+  }
+
+  .info-box-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .info-box-content {
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .stat-card {
+    padding: 2rem;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .stat-label {
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+  }
+
+  .attack-step {
+    padding: 1.3rem 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .step-number {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .step-title {
+    font-size: 1.1rem;
+  }
+
+  .step-desc {
+    font-size: 1rem;
+  }
+
+  .timeline-date {
+    font-size: 1rem;
+  }
+
+  .timeline-text {
+    font-size: 1.08rem;
+  }
+
+  .comparison-table {
+    font-size: 1.05rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 1rem;
+  }
+
+  .slide-columns {
+    gap: 2.5rem;
+  }
+
+  .nav-btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+  }
+
+  .nav-slide-counter {
+    font-size: 1rem;
+  }
+
+  .quiz-question {
+    font-size: 1.5rem;
+  }
+
+  .quiz-option {
+    padding: 1.2rem 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  .quiz-feedback {
+    font-size: 1.05rem;
+  }
+
+  .checklist-item {
+    padding: 1rem 1.3rem;
+  }
+
+  .checklist-text {
+    font-size: 1.08rem;
+  }
+
+  .email-demo {
+    max-width: 700px;
+  }
+
+  .email-body {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .red-flag-item span {
+    font-size: 1.02rem;
+  }
+
+  .home-title {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  .home-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .module-card {
+    padding: 2.5rem;
+  }
+
+  .module-icon {
+    font-size: 3rem;
+  }
+
+  .module-title {
+    font-size: 1.6rem;
+  }
+
+  .module-description {
+    font-size: 1.08rem;
+  }
+}
+
+/* ========== EXTRA LARGE / 4K (1800px+) ========== */
+@media (min-width: 1800px) {
+  .slide-inner {
+    max-width: 1400px;
+  }
+
+  .slide {
+    padding: 4rem 5rem 6rem;
+  }
+
+  .slide-inner {
+    gap: 2.2rem;
+  }
+
+  .slide-title {
+    font-size: clamp(2.5rem, 3vw, 4rem);
+  }
+
+  .slide-text {
+    font-size: 1.5rem;
+    max-width: 1100px;
+  }
+
+  .slide-list li {
+    font-size: 1.4rem;
+  }
+
+  .info-box {
+    padding: 2.5rem;
+  }
+
+  .info-box-title {
+    font-size: 1.35rem;
+  }
+
+  .info-box-content {
+    font-size: 1.2rem;
+  }
+
+  .stat-number {
+    font-size: 3.5rem;
+  }
+
+  .stat-label {
+    font-size: 1.15rem;
+  }
+
+  .attack-step {
+    padding: 1.5rem 2rem;
+  }
+
+  .step-title {
+    font-size: 1.25rem;
+  }
+
+  .step-desc {
+    font-size: 1.1rem;
+  }
+
+  .comparison-table {
+    font-size: 1.15rem;
+  }
+
+  .slide-cover .slide-title {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+  }
+
+  .slide-cover .cover-icon {
+    font-size: 6rem;
+  }
+
+  .slide-cover .slide-text {
+    font-size: 1.5rem;
+    max-width: 900px;
+  }
+
+  .quiz-question {
+    font-size: 1.7rem;
+  }
+
+  .quiz-option {
+    padding: 1.4rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .modules-grid {
+    max-width: 1500px;
+    gap: 2rem;
+  }
+
+  .module-card {
+    padding: 3rem;
+  }
+
+  .module-title {
+    font-size: 1.8rem;
+  }
+
+  .module-description {
+    font-size: 1.15rem;
+  }
+
+  .home-shield-icon {
+    font-size: 5rem;
   }
 }
