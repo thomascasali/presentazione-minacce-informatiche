@@ -6,6 +6,8 @@ Materiale didattico completo sulle minacce informatiche: una presentazione React
 
 ```
 presentazione-minacce-informatiche/
+├── .github/workflows/
+│   └── deploy.yml            # GitHub Actions: build e deploy automatico
 ├── src/
 │   ├── modules/           # Moduli della presentazione (uno per argomento)
 │   │   ├── index.js       # Registro dei moduli e metadati
@@ -23,6 +25,7 @@ presentazione-minacce-informatiche/
 │   ├── index.css          # Stili globali e tema
 │   └── main.jsx           # Entry point
 ├── schede-gioco-di-ruolo.md  # Schede per attivita in classe
+├── ruoli-personaggi.md       # Ruoli dettagliati per i giochi di ruolo
 ├── package.json
 ├── vite.config.js
 └── index.html
@@ -68,13 +71,16 @@ npm run build
 
 I file compilati saranno nella cartella `dist/`.
 
-### Deploy su GitHub Pages
+### Deploy su GitHub Pages (automatico via GitHub Actions)
 
-```bash
-npm run deploy
-```
+Il deploy avviene **automaticamente** ad ogni push sul branch `main` tramite GitHub Actions (`.github/workflows/deploy.yml`).
 
-Questo comando esegue la build e pubblica su GitHub Pages. La presentazione sara disponibile all'indirizzo:
+**Configurazione necessaria (una sola volta):**
+1. Nel repository GitHub, vai su **Settings > Pages**
+2. In **Source**, seleziona **GitHub Actions**
+3. Fai push su `main`: il workflow fara build e deploy automaticamente
+
+La presentazione sara disponibile all'indirizzo:
 `https://thomascasali.github.io/presentazione-minacce-informatiche/`
 
 ## Navigazione della Presentazione
@@ -160,7 +166,10 @@ Modificare l'array `moduleOrder` in `src/modules/index.js`. L'ordine dei moduli 
 
 ## Schede Gioco di Ruolo
 
-Il file `schede-gioco-di-ruolo.md` contiene 5 scenari per attivita didattiche in classe:
+Due file dedicati alle attivita didattiche in classe:
+
+### `schede-gioco-di-ruolo.md` - Scenari e svolgimento
+Contiene 5 scenari completi con contesto, fasi di gioco, tabelle decisionali e domande:
 
 1. **L'Email Sospetta di Aruba** - Simulazione phishing (30 min, livello base)
 2. **L'Attacco Ransomware all'Ospedale** - Gestione crisi WannaCry (40 min, livello intermedio)
@@ -168,7 +177,13 @@ Il file `schede-gioco-di-ruolo.md` contiene 5 scenari per attivita didattiche in
 4. **Il Social Engineering al Telefono** - Vishing e persuasione (30 min, livello base)
 5. **La Gara di Sicurezza** - Red Team vs Blue Team (30 min, livello avanzato)
 
-Ogni scenario include ruoli, svolgimento, materiali e domande per la discussione.
+### `ruoli-personaggi.md` - Schede individuali dei personaggi
+Contiene le schede dettagliate da stampare e consegnare a ogni studente, con:
+- Background e personalita del personaggio
+- Obiettivi e motivazioni
+- Conoscenze specifiche del ruolo
+- Frasi suggerite per guidare l'interpretazione
+- Schede di osservazione per gli osservatori
 
 ## Tecnologie Utilizzate
 
