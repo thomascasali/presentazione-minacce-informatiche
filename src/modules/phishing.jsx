@@ -177,7 +177,7 @@ const slides = [
         <motion.div className="slide-columns" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
           <div className="info-box danger">
             <div className="info-box-title">📧 Email Phishing</div>
-            <div className="info-box-content">Il più comune. In Italia: email false dall'Agenzia delle Entrate ("rimborso fiscale") e dall'INPS ("aggiorna il profilo").</div>
+            <div className="info-box-content">Il più comune. In Italia: email false dall'<a href="https://www.agenziaentrate.gov.it/portale/avviso-del-9-aprile-2024" target="_blank" rel="noopener noreferrer">Agenzia delle Entrate</a> ("rimborso fiscale") e dall'<a href="https://www.commissariatodips.it/notizie/articolo/attenzione-alle-false-comunicazioni-che-sembrano-provenire-dallinps/index.html" target="_blank" rel="noopener noreferrer">INPS</a> ("aggiorna il profilo").</div>
           </div>
           <div className="info-box danger">
             <div className="info-box-title">🎯 Spear Phishing</div>
@@ -185,7 +185,7 @@ const slides = [
           </div>
           <div className="info-box danger">
             <div className="info-box-title">📱 Smishing (SMS)</div>
-            <div className="info-box-content">In Italia: SMS falsi da "PosteInfo" (appare nel thread legittimo!) e "Il tuo pacco è in giacenza" da BRT/GLS/Amazon.</div>
+            <div className="info-box-content">In Italia: SMS falsi da "<a href="https://www.cybersecurity360.it/news/smishing-a-tema-poste-italiane-i-dettagli-e-come-difendersi/" target="_blank" rel="noopener noreferrer">PosteInfo</a>" (appare nel thread legittimo!) e "<a href="https://www.cybersecurity360.it/nuove-minacce/falsi-pacchi-in-arrivo-la-truffa-via-e-mail-e-via-sms/" target="_blank" rel="noopener noreferrer">Il tuo pacco è in giacenza</a>" da BRT/GLS/Amazon.</div>
           </div>
           <div className="info-box danger">
             <div className="info-box-title">📞 Vishing (Voce)</div>
@@ -281,25 +281,25 @@ const slides = [
         </motion.h2>
         <motion.div className="slide-columns" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
           <div className="info-box danger">
-            <div className="info-box-title">🏛️ Agenzia delle Entrate</div>
+            <div className="info-box-title">🏛️ <a href="https://www.agenziaentrate.gov.it/portale/avviso-del-9-aprile-2024" target="_blank" rel="noopener noreferrer">Agenzia delle Entrate</a></div>
             <div className="info-box-content">
               Campagne ricorrenti (2024-2025): email con oggetto "Rimborso fiscale" che chiedono dati bancari. URL con dominio simile ma <code>.info</code> o <code>.net</code> invece di <code>.gov.it</code>.
             </div>
           </div>
           <div className="info-box danger">
-            <div className="info-box-title">🆔 INPS</div>
+            <div className="info-box-title">🆔 <a href="https://www.commissariatodips.it/notizie/articolo/attenzione-alle-false-comunicazioni-che-sembrano-provenire-dallinps/index.html" target="_blank" rel="noopener noreferrer">INPS</a></div>
             <div className="info-box-content">
               Email false "Aggiorna il tuo profilo INPS" con link a siti clone che raccolgono codice fiscale, IBAN e credenziali SPID della vittima.
             </div>
           </div>
           <div className="info-box danger">
-            <div className="info-box-title">📱 PosteInfo (Smishing)</div>
+            <div className="info-box-title">📱 <a href="https://www.cybersecurity360.it/news/smishing-a-tema-poste-italiane-i-dettagli-e-come-difendersi/" target="_blank" rel="noopener noreferrer">PosteInfo (Smishing)</a></div>
             <div className="info-box-content">
               SMS che appare nello stesso thread dei messaggi reali di Poste Italiane: "Il tuo conto è stato limitato, verifica qui". La vittima si fida perché il messaggio appare tra quelli legittimi.
             </div>
           </div>
           <div className="info-box danger">
-            <div className="info-box-title">📦 Pacco in Giacenza</div>
+            <div className="info-box-title">📦 <a href="https://www.cybersecurity360.it/nuove-minacce/falsi-pacchi-in-arrivo-la-truffa-via-e-mail-e-via-sms/" target="_blank" rel="noopener noreferrer">Pacco in Giacenza</a></div>
             <div className="info-box-content">
               SMS massivi da "BRT", "GLS", "Amazon": link a pagine che chiedono 1-2€ per "sblocco consegna" ma in realtà rubano tutti i dati della carta di credito.
             </div>

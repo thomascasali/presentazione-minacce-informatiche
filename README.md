@@ -26,6 +26,7 @@ presentazione-minacce-informatiche/
 │   └── main.jsx           # Entry point
 ├── schede-gioco-di-ruolo.md  # Schede per attivita in classe
 ├── ruoli-personaggi.md       # Ruoli dettagliati per i giochi di ruolo
+├── fonti.md                  # Fonti verificate per tutti gli esempi italiani
 ├── package.json
 ├── vite.config.js
 └── index.html
@@ -33,14 +34,14 @@ presentazione-minacce-informatiche/
 
 ## Contenuti della Presentazione
 
-La presentazione e organizzata in **6 moduli indipendenti** (~51 slide totali):
+La presentazione e organizzata in **6 moduli indipendenti** (~52 slide totali):
 
 | Modulo | Slide | Contenuto |
 |--------|-------|-----------|
-| **Introduzione** | 8 | Panoramica cybersecurity, triade CIA, evoluzione minacce, statistiche |
-| **Phishing** | 10 | Definizione, varianti, caso Aruba (demo interattiva email), red flag, protezione |
-| **Malware** | 10 | Tipologie, vettori di diffusione, caso WannaCry (timeline, impatto globale) |
-| **Trojan** | 10 | Definizione, tipi, caso Emotet (catena infezione, thread hijacking, botnet) |
+| **Introduzione** | 8 | Panoramica cybersecurity, triade CIA, statistiche Clusit 2024 (Italia 11% attacchi globali) |
+| **Phishing** | 10 | Varianti, caso Aruba (demo email), campagne italiane (Agenzia Entrate, INPS, PosteInfo) |
+| **Malware** | 10 | Tipologie, caso WannaCry, ransomware italiani (ASL Abruzzo, Regione Lazio, Westpole) |
+| **Trojan** | 11 | Caso Emotet, trojan italiani (Ursnif, sLoad via PEC), spyware Paragon-Graphite 2025 |
 | **Protezione** | 10 | 2FA, password sicure, aggiornamenti, backup 3-2-1, checklist interattiva |
 | **Quiz** | 3 | 8 domande interattive con feedback e punteggio finale |
 

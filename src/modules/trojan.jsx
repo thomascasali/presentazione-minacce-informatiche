@@ -241,23 +241,23 @@ const slides = [
           Trojan in Italia: Le Campagne Reali
         </motion.h2>
         <motion.p className="slide-text" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
-          Il CERT-AgID (Computer Emergency Response Team dell'Agenzia per l'Italia Digitale) monitora le campagne di trojan che colpiscono specificamente l'Italia:
+          Il <a href="https://cert-agid.gov.it/" target="_blank" rel="noopener noreferrer">CERT-AgID</a> (Computer Emergency Response Team dell'Agenzia per l'Italia Digitale) monitora le campagne di trojan che colpiscono specificamente l'Italia:
         </motion.p>
         <motion.div className="slide-columns" variants={fadeUp} initial="hidden" animate="visible" custom={3}>
           <div className="info-box danger">
-            <div className="info-box-title">🏦 Ursnif/Gozi</div>
+            <div className="info-box-title">🏦 <a href="https://cert-agid.gov.it/news/malware/il-fenomeno-ursnif-in-italia-i-numeri-dellultima-ondata-di-campagne/" target="_blank" rel="noopener noreferrer">Ursnif/Gozi</a></div>
             <div className="info-box-content">
               Il trojan bancario più diffuso in Italia: <strong>197 campagne</strong> tracciate dal CERT-AgID. Ruba credenziali di 20+ banche italiane. Si diffonde via email con allegati Excel/ZIP mascherati da fatture.
             </div>
           </div>
           <div className="info-box danger">
-            <div className="info-box-title">📧 sLoad via PEC</div>
+            <div className="info-box-title">📧 <a href="https://cert-agid.gov.it/news/malware/nuova-campagna-malware-sload-veicolata-via-pec/" target="_blank" rel="noopener noreferrer">sLoad via PEC</a></div>
             <div className="info-box-content">
               Si diffonde tramite <strong>PEC</strong> (Posta Elettronica Certificata), sfruttando la fiducia nel canale "sicuro". Dopo l'infezione iniziale, scarica componenti aggiuntivi per il furto dati.
             </div>
           </div>
           <div className="info-box danger">
-            <div className="info-box-title">🏛️ Danabot (2024)</div>
+            <div className="info-box-title">🏛️ <a href="https://cert-agid.gov.it/news/report-riepilogativo-sulle-tendenze-delle-campagne-malevole-analizzate-dal-cert-agid-nel-2024/" target="_blank" rel="noopener noreferrer">Danabot (2024)</a></div>
             <div className="info-box-content">
               Campagna del gruppo <strong>TA544</strong> che impersona l'Agenzia delle Entrate con documenti Word malevoli. Attivando le macro, il trojan ruba credenziali bancarie e dati personali.
             </div>
@@ -267,7 +267,42 @@ const slides = [
     </div>
   ),
 
-  // Slide 9 - Thread Hijacking
+  // Slide 9 - Spyware Paragon-Graphite
+  () => (
+    <div className="slide">
+      <div className="slide-inner">
+        <motion.span className="slide-badge trojan" variants={fadeUp} initial="hidden" animate="visible">Italia 2025</motion.span>
+        <motion.h2 className="slide-title gradient-blue" variants={fadeUp} initial="hidden" animate="visible" custom={1}>
+          <a href="https://www.internazionale.it/notizie/omer-benjakob/2025/02/08/paragon-giornalisti-spiati-italia" target="_blank" rel="noopener noreferrer">Caso Paragon-Graphite</a>: Spyware su Giornalisti Italiani
+        </motion.h2>
+        <motion.p className="slide-text" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
+          Nel febbraio 2025 è emerso che lo spyware <strong>Graphite</strong>, prodotto dall'azienda israeliana Paragon, è stato usato per sorvegliare giornalisti e attivisti italiani tramite WhatsApp:
+        </motion.p>
+        <motion.div className="slide-columns" variants={fadeUp} initial="hidden" animate="visible" custom={3}>
+          <div className="info-box danger">
+            <div className="info-box-title">📱 Come funziona Graphite</div>
+            <div className="info-box-content">
+              Sfrutta vulnerabilità di WhatsApp per infettare il telefono <strong>senza alcun click</strong> (zero-click). Una volta installato, accede a messaggi (anche crittografati), foto, posizione, microfono e fotocamera.
+            </div>
+          </div>
+          <div className="info-box warning">
+            <div className="info-box-title">🎯 Le vittime italiane</div>
+            <div className="info-box-content">
+              Tra le vittime confermate: <strong>Francesco Cancellato</strong> (direttore Fanpage), <strong>Luca Casarini</strong> (ONG Mediterranea), altri attivisti. Il COPASIR ha avviato un'indagine, e Paragon ha rescisso il contratto con l'Italia.
+            </div>
+          </div>
+        </motion.div>
+        <motion.div className="info-box info" variants={fadeUp} initial="hidden" animate="visible" custom={4}>
+          <div className="info-box-title">💡 Cosa insegna questo caso</div>
+          <div className="info-box-content">
+            Anche gli spyware "legali" venduti ai governi possono essere usati impropriamente. Aggiornare sempre le app (WhatsApp ha corretto la falla a dicembre 2024) e monitorare comportamenti anomali del telefono.
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  ),
+
+  // Slide 10 - Thread Hijacking
   () => (
     <div className="slide">
       <div className="slide-inner">

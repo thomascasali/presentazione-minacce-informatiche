@@ -70,7 +70,7 @@ const slides = [
           </div>
           <div className="stat-card">
             <div className="stat-number">11%</div>
-            <div className="stat-label">Degli attacchi globali colpisce l'Italia (Rapporto Clusit 2024)</div>
+            <div className="stat-label">Degli attacchi globali colpisce l'Italia (<a href="https://clusit.it/rapporto-clusit/" target="_blank" rel="noopener noreferrer">Rapporto Clusit 2024</a>)</div>
           </div>
           <div className="stat-card">
             <div className="stat-number">+65%</div>
@@ -148,7 +148,7 @@ const slides = [
               <tr>
                 <td><strong>Hacktivisti</strong></td>
                 <td>Motivazione politica/sociale</td>
-                <td>NoName057(16): DDoS su ministeri e banche italiane (2023-2024)</td>
+                <td><a href="https://www.ictsecuritymagazine.com/notizie/noname05716-attacchi/" target="_blank" rel="noopener noreferrer">NoName057(16)</a>: DDoS su ministeri e banche italiane (2023-2024)</td>
               </tr>
               <tr>
                 <td><strong>State-sponsored</strong></td>
@@ -266,11 +266,11 @@ const slides = [
           </li>
           <li>
             <span className="list-icon"><FiLock /></span>
-            <span><strong>Sanità:</strong> Ransomware su ASL italiane (Abruzzo, Verona, Modena) con dati sanitari rubati e pubblicati</span>
+            <span><strong>Sanità:</strong> Ransomware su ASL italiane (<a href="https://www.ansa.it/abruzzo/notizie/2023/05/08/attacco-di-hacker-ad-asl-laquila-chiesto-un-riscatto_91f52c64-f5af-414d-bb65-bea765586741.html" target="_blank" rel="noopener noreferrer">Abruzzo</a>, <a href="https://www.ansa.it/sito/notizie/cronaca/2023/10/23/attacco-hacker-allazienda-ospedaliera-di-verona_2fa713bb-d8d2-4569-a826-532f2aed47b0.html" target="_blank" rel="noopener noreferrer">Verona</a>) con dati sanitari rubati</span>
           </li>
           <li>
             <span className="list-icon"><FiTrendingUp /></span>
-            <span><strong>PA e servizi:</strong> Attacco Westpole (dic 2023): centinaia di comuni bloccati, stipendi e anagrafe fermi</span>
+            <span><strong>PA e servizi:</strong> <a href="https://www.ilpost.it/2023/12/19/attacco-informatico-westpole-pa/" target="_blank" rel="noopener noreferrer">Attacco Westpole</a> (dic 2023): centinaia di comuni bloccati, stipendi e anagrafe fermi</span>
           </li>
         </motion.ul>
         <motion.div className="info-box warning" variants={fadeUp} initial="hidden" animate="visible" custom={4}>
