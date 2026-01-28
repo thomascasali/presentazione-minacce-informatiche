@@ -232,38 +232,35 @@ const slides = [
     </div>
   ),
 
-  // Slide 8 - Emotet timeline
+  // Slide 8 - Trojan in Italia
   () => (
     <div className="slide">
       <div className="slide-inner">
-        <motion.span className="slide-badge trojan" variants={fadeUp} initial="hidden" animate="visible">Caso Reale</motion.span>
-        <motion.h2 className="slide-title" variants={fadeUp} initial="hidden" animate="visible" custom={1}>
-          Emotet: La Timeline
+        <motion.span className="slide-badge trojan" variants={fadeUp} initial="hidden" animate="visible">Italia</motion.span>
+        <motion.h2 className="slide-title gradient-blue" variants={fadeUp} initial="hidden" animate="visible" custom={1}>
+          Trojan in Italia: Le Campagne Reali
         </motion.h2>
-        <motion.div className="timeline" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
-          <div className="timeline-item">
-            <div className="timeline-date">2014</div>
-            <div className="timeline-text">Prima comparsa come trojan bancario, colpisce clienti di banche tedesche e austriache.</div>
+        <motion.p className="slide-text" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
+          Il CERT-AgID (Computer Emergency Response Team dell'Agenzia per l'Italia Digitale) monitora le campagne di trojan che colpiscono specificamente l'Italia:
+        </motion.p>
+        <motion.div className="slide-columns" variants={fadeUp} initial="hidden" animate="visible" custom={3}>
+          <div className="info-box danger">
+            <div className="info-box-title">🏦 Ursnif/Gozi</div>
+            <div className="info-box-content">
+              Il trojan bancario più diffuso in Italia: <strong>197 campagne</strong> tracciate dal CERT-AgID. Ruba credenziali di 20+ banche italiane. Si diffonde via email con allegati Excel/ZIP mascherati da fatture.
+            </div>
           </div>
-          <div className="timeline-item">
-            <div className="timeline-date">2016-2017</div>
-            <div className="timeline-text">Si evolve in piattaforma di distribuzione malware. Inizia a vendere accesso ai sistemi infetti (MaaS).</div>
+          <div className="info-box danger">
+            <div className="info-box-title">📧 sLoad via PEC</div>
+            <div className="info-box-content">
+              Si diffonde tramite <strong>PEC</strong> (Posta Elettronica Certificata), sfruttando la fiducia nel canale "sicuro". Dopo l'infezione iniziale, scarica componenti aggiuntivi per il furto dati.
+            </div>
           </div>
-          <div className="timeline-item">
-            <div className="timeline-date">2018-2019</div>
-            <div className="timeline-text">Picco di attività. Colpisce aziende, ospedali, enti pubblici in tutto il mondo. Introduce il thread hijacking.</div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-date">Gennaio 2021</div>
-            <div className="timeline-text">Operazione congiunta di Europol, FBI e 8 paesi: la botnet viene smantellata e i server sequestrati.</div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-date">Novembre 2021</div>
-            <div className="timeline-text">Emotet ricompare: TrickBot viene usato per scaricare una nuova versione di Emotet sui sistemi ancora infetti.</div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-date">2022-2023</div>
-            <div className="timeline-text">Emotet continua ad evolversi con nuove tecniche di evasione e metodi di distribuzione.</div>
+          <div className="info-box danger">
+            <div className="info-box-title">🏛️ Danabot (2024)</div>
+            <div className="info-box-content">
+              Campagna del gruppo <strong>TA544</strong> che impersona l'Agenzia delle Entrate con documenti Word malevoli. Attivando le macro, il trojan ruba credenziali bancarie e dati personali.
+            </div>
           </div>
         </motion.div>
       </div>
@@ -317,12 +314,11 @@ const slides = [
           <div className="info-box-content">
             <ul style={{ paddingLeft: '1rem', lineHeight: '2' }}>
               <li>I Trojan si <strong>mascherano da software legittimo</strong> per ingannare l'utente</li>
-              <li>A differenza dei virus, <strong>non si auto-replicano</strong>: serve l'azione dell'utente</li>
-              <li>Possono rubare dati, aprire backdoor, scaricare altri malware</li>
               <li><strong>Emotet</strong> era il trojan più pericoloso al mondo, smantellato nel 2021 ma poi riapparso</li>
-              <li>Le <strong>botnet</strong> trasformano i PC infetti in strumenti controllati da remoto</li>
+              <li>In Italia: <strong>Ursnif/Gozi</strong> (197 campagne), <strong>sLoad via PEC</strong>, <strong>Danabot</strong> via finta Agenzia Entrate</li>
+              <li>Attenzione alla <strong>PEC</strong>: anche la posta certificata può veicolare malware</li>
               <li><strong>Non abilitare mai le macro</strong> in documenti ricevuti via email</li>
-              <li>Scaricare software <strong>solo da fonti ufficiali</strong></li>
+              <li>Scaricare software <strong>solo da fonti ufficiali</strong> e segnalare al <strong>CERT-AgID</strong></li>
             </ul>
           </div>
         </motion.div>

@@ -177,19 +177,19 @@ const slides = [
         <motion.div className="slide-columns" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
           <div className="info-box danger">
             <div className="info-box-title">📧 Email Phishing</div>
-            <div className="info-box-content">Il più comune. Email di massa che imitano banche, provider, corrieri. Es: "Il tuo pacco è in giacenza".</div>
+            <div className="info-box-content">Il più comune. In Italia: email false dall'Agenzia delle Entrate ("rimborso fiscale") e dall'INPS ("aggiorna il profilo").</div>
           </div>
           <div className="info-box danger">
             <div className="info-box-title">🎯 Spear Phishing</div>
-            <div className="info-box-content">Attacco mirato a una persona specifica. L'attaccante studia la vittima e personalizza il messaggio.</div>
+            <div className="info-box-content">Attacco mirato a una persona specifica. In Italia usato per colpire dirigenti aziendali e funzionari PA con email personalizzate.</div>
           </div>
           <div className="info-box danger">
             <div className="info-box-title">📱 Smishing (SMS)</div>
-            <div className="info-box-content">Phishing via SMS. Es: "La tua carta è stata bloccata. Clicca qui per sbloccarla".</div>
+            <div className="info-box-content">In Italia: SMS falsi da "PosteInfo" (appare nel thread legittimo!) e "Il tuo pacco è in giacenza" da BRT/GLS/Amazon.</div>
           </div>
           <div className="info-box danger">
             <div className="info-box-title">📞 Vishing (Voce)</div>
-            <div className="info-box-content">Phishing telefonico. Il truffatore chiama fingendosi la banca o supporto tecnico.</div>
+            <div className="info-box-content">Phishing telefonico. In Italia: chiamate da finti operatori bancari che chiedono codici OTP per "bloccare movimenti sospetti".</div>
           </div>
         </motion.div>
       </div>
@@ -271,30 +271,38 @@ const slides = [
     </div>
   ),
 
-  // Slide 8 - Statistiche phishing
+  // Slide 8 - Phishing in Italia
   () => (
     <div className="slide">
       <div className="slide-inner">
-        <motion.span className="slide-badge phishing" variants={fadeUp} initial="hidden" animate="visible">Phishing</motion.span>
+        <motion.span className="slide-badge phishing" variants={fadeUp} initial="hidden" animate="visible">Italia</motion.span>
         <motion.h2 className="slide-title" variants={fadeUp} initial="hidden" animate="visible" custom={1}>
-          Phishing in Numeri
+          Phishing in Italia: Campagne Reali
         </motion.h2>
-        <motion.div className="stat-grid" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
-          <div className="stat-card">
-            <div className="stat-number">3,4 Mld</div>
-            <div className="stat-label">Email di phishing inviate ogni giorno nel mondo</div>
+        <motion.div className="slide-columns" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
+          <div className="info-box danger">
+            <div className="info-box-title">🏛️ Agenzia delle Entrate</div>
+            <div className="info-box-content">
+              Campagne ricorrenti (2024-2025): email con oggetto "Rimborso fiscale" che chiedono dati bancari. URL con dominio simile ma <code>.info</code> o <code>.net</code> invece di <code>.gov.it</code>.
+            </div>
           </div>
-          <div className="stat-card">
-            <div className="stat-number">36%</div>
-            <div className="stat-label">Delle violazioni dati iniziano con il phishing</div>
+          <div className="info-box danger">
+            <div className="info-box-title">🆔 INPS</div>
+            <div className="info-box-content">
+              Email false "Aggiorna il tuo profilo INPS" con link a siti clone che raccolgono codice fiscale, IBAN e credenziali SPID della vittima.
+            </div>
           </div>
-          <div className="stat-card">
-            <div className="stat-number">12 sec</div>
-            <div className="stat-label">Tempo medio per cadere in un attacco di phishing</div>
+          <div className="info-box danger">
+            <div className="info-box-title">📱 PosteInfo (Smishing)</div>
+            <div className="info-box-content">
+              SMS che appare nello stesso thread dei messaggi reali di Poste Italiane: "Il tuo conto è stato limitato, verifica qui". La vittima si fida perché il messaggio appare tra quelli legittimi.
+            </div>
           </div>
-          <div className="stat-card">
-            <div className="stat-number">83%</div>
-            <div className="stat-label">Delle aziende ha subito attacchi phishing nel 2023</div>
+          <div className="info-box danger">
+            <div className="info-box-title">📦 Pacco in Giacenza</div>
+            <div className="info-box-content">
+              SMS massivi da "BRT", "GLS", "Amazon": link a pagine che chiedono 1-2€ per "sblocco consegna" ma in realtà rubano tutti i dati della carta di credito.
+            </div>
           </div>
         </motion.div>
       </div>
@@ -349,10 +357,10 @@ const slides = [
             <ul style={{ paddingLeft: '1rem', lineHeight: '2' }}>
               <li>Il phishing sfrutta la <strong>fiducia e l'urgenza</strong> per ingannare le vittime</li>
               <li>Esistono varianti: email phishing, spear phishing, smishing, vishing</li>
-              <li>Il <strong>caso Aruba</strong> è uno degli esempi più comuni in Italia</li>
-              <li><strong>Non cliccare mai</strong> su link in email sospette</li>
-              <li>Verificare <strong>sempre</strong> accedendo direttamente al sito ufficiale</li>
-              <li>Segnalare le email sospette al servizio indicato dal provider</li>
+              <li>In Italia: campagne che imitano <strong>Aruba, Agenzia delle Entrate, INPS e Poste</strong></li>
+              <li><strong>Smishing PosteInfo:</strong> gli SMS falsi appaiono nel thread dei messaggi reali</li>
+              <li><strong>Non cliccare mai</strong> su link in email/SMS sospetti e verificare dal sito ufficiale</li>
+              <li>Segnalare a CERT-AgID, Polizia Postale o al provider del servizio imitato</li>
             </ul>
           </div>
         </motion.div>
