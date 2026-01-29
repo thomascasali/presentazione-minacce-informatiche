@@ -69,16 +69,16 @@ const slides = [
             <div className="stat-label">Attacchi informatici al giorno nel mondo</div>
           </div>
           <div className="stat-card">
-            <div className="stat-number">4,45M$</div>
-            <div className="stat-label">Costo medio di un data breach (IBM, 2023)</div>
+            <div className="stat-number">11%</div>
+            <div className="stat-label">Degli attacchi globali colpisce l'Italia (<a href="https://clusit.it/rapporto-clusit/" target="_blank" rel="noopener noreferrer">Rapporto Clusit 2024</a>)</div>
           </div>
           <div className="stat-card">
-            <div className="stat-number">74%</div>
-            <div className="stat-label">Degli attacchi sfruttano il fattore umano</div>
+            <div className="stat-number">+65%</div>
+            <div className="stat-label">Aumento attacchi in Italia nel 2023 vs 2022 (Clusit)</div>
           </div>
           <div className="stat-card">
-            <div className="stat-number">+38%</div>
-            <div className="stat-label">Aumento attacchi nel 2023 vs 2022</div>
+            <div className="stat-number">47%</div>
+            <div className="stat-label">Dell'hacktivism mondiale ha preso di mira l'Italia nel 2023</div>
           </div>
         </motion.div>
       </div>
@@ -143,22 +143,22 @@ const slides = [
               <tr>
                 <td><strong>Cybercriminali</strong></td>
                 <td>Guadagno economico</td>
-                <td>Ransomware, furto dati carte di credito</td>
+                <td>Ransomware su ASL italiane, furto dati bancari con Ursnif</td>
               </tr>
               <tr>
                 <td><strong>Hacktivisti</strong></td>
                 <td>Motivazione politica/sociale</td>
-                <td>Defacement di siti, DDoS di protesta</td>
+                <td><a href="https://www.ictsecuritymagazine.com/notizie/noname05716-attacchi/" target="_blank" rel="noopener noreferrer">NoName057(16)</a>: DDoS su ministeri e banche italiane (2023-2024)</td>
               </tr>
               <tr>
                 <td><strong>State-sponsored</strong></td>
                 <td>Spionaggio, sabotaggio</td>
-                <td>APT (Advanced Persistent Threats)</td>
+                <td>APT: gruppi come Fancy Bear, Lazarus Group</td>
               </tr>
               <tr>
                 <td><strong>Insider</strong></td>
                 <td>Vendetta, profitto</td>
-                <td>Dipendenti che rubano dati aziendali</td>
+                <td>Dipendenti che rubano dati aziendali o vendono accessi</td>
               </tr>
               <tr>
                 <td><strong>Script Kiddie</strong></td>
@@ -258,25 +258,25 @@ const slides = [
         <motion.ul className="slide-list" variants={fadeUp} initial="hidden" animate="visible" custom={3}>
           <li>
             <span className="list-icon"><FiUsers /></span>
-            <span><strong>Social media:</strong> Furti di identità, account compromessi, truffe sui marketplace</span>
+            <span><strong>Identità digitale:</strong> Furti di SPID per accedere a servizi PA, modificare IBAN e ricevere rimborsi altrui</span>
           </li>
           <li>
             <span className="list-icon"><FiGlobe /></span>
-            <span><strong>E-commerce:</strong> Siti falsi, clonazione carte di credito, phishing bancario</span>
+            <span><strong>Smishing:</strong> SMS falsi da "PosteInfo" o "il tuo pacco è in giacenza" che rubano dati della carta</span>
           </li>
           <li>
             <span className="list-icon"><FiLock /></span>
-            <span><strong>Smartphone:</strong> App malevole, SMS truffa (smishing), spyware</span>
+            <span><strong>Sanità:</strong> Ransomware su ASL italiane (<a href="https://www.ansa.it/abruzzo/notizie/2023/05/08/attacco-di-hacker-ad-asl-laquila-chiesto-un-riscatto_91f52c64-f5af-414d-bb65-bea765586741.html" target="_blank" rel="noopener noreferrer">Abruzzo</a>, <a href="https://www.ansa.it/sito/notizie/cronaca/2023/10/23/attacco-hacker-allazienda-ospedaliera-di-verona_2fa713bb-d8d2-4569-a826-532f2aed47b0.html" target="_blank" rel="noopener noreferrer">Verona</a>) con dati sanitari rubati</span>
           </li>
           <li>
             <span className="list-icon"><FiTrendingUp /></span>
-            <span><strong>Scuola e lavoro:</strong> Ransomware su reti scolastiche, furto di credenziali, data breach</span>
+            <span><strong>PA e servizi:</strong> <a href="https://www.ilpost.it/2023/12/19/attacco-informatico-westpole-pa/" target="_blank" rel="noopener noreferrer">Attacco Westpole</a> (dic 2023): centinaia di comuni bloccati, stipendi e anagrafe fermi</span>
           </li>
         </motion.ul>
         <motion.div className="info-box warning" variants={fadeUp} initial="hidden" animate="visible" custom={4}>
-          <div className="info-box-title"><FiAlertTriangle /> Ricorda</div>
+          <div className="info-box-title"><FiAlertTriangle /> L'Italia nel mirino</div>
           <div className="info-box-content">
-            La sicurezza informatica riguarda tutti. Ogni dispositivo connesso è un potenziale bersaglio. La consapevolezza è la prima linea di difesa.
+            Secondo il Rapporto Clusit 2024, l'Italia riceve l'11% degli attacchi informatici globali nonostante rappresenti meno dell'1% della popolazione mondiale. La consapevolezza è la prima linea di difesa.
           </div>
         </motion.div>
       </div>
