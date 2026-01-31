@@ -71,6 +71,16 @@ Questo documento contiene le fonti verificate per tutti gli esempi di cybersecur
   - [Agenzia delle Entrate - Focus Phishing](https://www.agenziaentrate.gov.it/portale/focus-sul-phishing/segnalazioni-e-approfondimenti)
   - [CERT-AgID - Phishing Agenzia Entrate](https://cert-agid.gov.it/news/campagna-di-phishing-agenzia-entrate-e-riscossione/)
 
+### Truffa 18app / Bonus Cultura (SPID)
+- **Cosa**: Criminali creavano SPID falsi a nome di neo-diciottenni per rubare i €500 del Bonus Cultura
+- **Dettagli**: Oltre 2.500 SPID irregolari, ~2.000 voucher truccati, €400.000 di danno all'Erario
+- **Fonti**:
+  - [Il Fatto Quotidiano - Bonus 18App SPID clonato](https://www.ilfattoquotidiano.it/2024/02/16/bonus-18app-spid-clonato-e-giovani-derubati-centinaia-di-casi-confconsumatori-invia-contestazione-al-governo-zero-controlli/7448153/)
+  - [TgCom24 - Frode Bonus Cultura con SPID irregolari](https://www.tgcom24.mediaset.it/cronaca/frode-bonus-cultura-truffa-online-hacker-spid_104356564-202502k.shtml)
+  - [QuiFinanza - SPID irregolari e truffa bonus cultura](https://quifinanza.it/attualita/spid-irregolari-bonus-cultura-truffa/914468/)
+  - [Confconsumatori - Truffe a raffica per diciottenni](https://www.confconsumatori.it/bonus-cultura-truffe-a-raffica-per-i-diciottenni/)
+  - [Federprivacy - Falla nel sistema identità digitali](https://www.federprivacy.org/informazione/societa/la-truffa-del-bonus-cultura-evidenzia-una-falla-enorme-nel-sistema-delle-identita-digitali)
+
 ### INPS
 - **Cosa**: False email/SMS per aggiornamento profilo e furto SPID
 - **Fonti**:
@@ -151,6 +161,43 @@ Questo documento contiene le fonti verificate per tutti gli esempi di cybersecur
   - [Valigia Blu - Caso Paragon giornalisti WhatsApp](https://www.valigiablu.it/paragon-giornalisti-spiati-whatsapp-italia/)
   - [Parlamento Europeo - Interrogazione Paragon](https://www.europarl.europa.eu/doceo/document/E-10-2025-000617_IT.html)
   - [Amnesty International - Spyware Pegasus](https://www.amnesty.it/spyware-pegasus-risarcimento-milionario-per-whatsapp/)
+
+---
+
+## Attacchi Web
+
+### SQL Injection
+- **Cosa**: Iniezione di codice SQL malevolo nei campi di input per manipolare database
+- **Fonti**:
+  - [OWASP - SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)
+  - [OWASP Top 10](https://owasp.org/Top10/) - SQL Injection nella lista da oltre 20 anni
+  - [PortSwigger - SQL Injection Tutorial](https://portswigger.net/web-security/sql-injection)
+
+### Cross-Site Scripting (XSS)
+- **Cosa**: Iniezione di codice JavaScript malevolo nelle pagine web
+- **Fonti**:
+  - [OWASP - XSS](https://owasp.org/www-community/attacks/xss/)
+  - [PortSwigger - XSS Guide](https://portswigger.net/web-security/cross-site-scripting)
+
+### CSRF (Cross-Site Request Forgery)
+- **Cosa**: Attacco che induce l'utente a eseguire azioni indesiderate su siti dove è autenticato
+- **Fonti**:
+  - [OWASP - CSRF](https://owasp.org/www-community/attacks/csrf)
+  - [PortSwigger - CSRF Tutorial](https://portswigger.net/web-security/csrf)
+
+### Attacchi WordPress
+- **Cosa**: Bot automatizzati che sfruttano vulnerabilità di WordPress e plugin
+- **Fonti**:
+  - [WPScan - Vulnerability Database](https://wpscan.com/) - 50.000+ vulnerabilità catalogate
+  - [Wordfence - WordPress Security](https://www.wordfence.com/)
+  - [Sucuri - WordPress Security Blog](https://blog.sucuri.net/category/wordpress-security/)
+  - [Patchstack - WordPress Vulnerability Stats](https://patchstack.com/whitepaper/state-of-wordpress-security-in-2024/)
+
+### MOVEit (SQL Injection 2023)
+- **Cosa**: Attacco SQL injection che ha colpito 2.500+ organizzazioni e 65+ milioni di persone
+- **Fonti**:
+  - [CISA - MOVEit Advisory](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a)
+  - [KrebsOnSecurity - MOVEit Breach](https://krebsonsecurity.com/tag/moveit/)
 
 ---
 
