@@ -23,7 +23,7 @@ function SecurityChecklist() {
     'Verifico i link prima di cliccare',
     'Non uso Wi-Fi pubbliche per operazioni sensibili',
     'Le mie password hanno almeno 12 caratteri',
-    'Non scarico software da siti non ufficiali',
+    'Ho controllato la mia email su haveibeenpwned.com',
   ]
 
   const toggle = (i) => setChecked((prev) => ({ ...prev, [i]: !prev[i] }))
@@ -168,6 +168,12 @@ const slides = [
           <div className="info-box-title">💡 Consiglio: usa una passphrase</div>
           <div className="info-box-content">
             Una frase di 3-4 parole casuali è più sicura e facile da ricordare di una password complessa. Es: <code>cavallo-batteria-graffetta</code>. Usa un <strong>password manager</strong> (Bitwarden, 1Password) per gestirle tutte.
+          </div>
+        </motion.div>
+        <motion.div className="info-box warning" variants={fadeUp} initial="hidden" animate="visible" custom={4}>
+          <div className="info-box-title">🔍 Controlla se i tuoi dati sono stati rubati</div>
+          <div className="info-box-content">
+            <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer"><strong>Have I Been Pwned</strong></a>: inserisci la tua email per scoprire se è presente in data breach noti. Se lo è, cambia subito la password di quell'account e di tutti gli altri dove usavi la stessa!
           </div>
         </motion.div>
       </div>

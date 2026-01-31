@@ -201,6 +201,18 @@ Questo documento contiene le fonti verificate per tutti gli esempi di cybersecur
 
 ---
 
+## Strumenti di Protezione
+
+### Have I Been Pwned
+- **Cosa**: Servizio gratuito per verificare se la propria email o password è presente in data breach noti
+- **Creatore**: Troy Hunt, esperto di sicurezza e Microsoft Regional Director
+- **Fonti**:
+  - [Have I Been Pwned](https://haveibeenpwned.com/) - Sito ufficiale
+  - [Have I Been Pwned - About](https://haveibeenpwned.com/About) - Informazioni sul progetto
+  - [Pwned Passwords](https://haveibeenpwned.com/Passwords) - Database di 800M+ password compromesse
+
+---
+
 ## Risorse Istituzionali
 
 ### Segnalazione e Supporto
