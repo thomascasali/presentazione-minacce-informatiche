@@ -164,6 +164,43 @@ Questo documento contiene le fonti verificate per tutti gli esempi di cybersecur
 
 ---
 
+## Attacchi Web
+
+### SQL Injection
+- **Cosa**: Iniezione di codice SQL malevolo nei campi di input per manipolare database
+- **Fonti**:
+  - [OWASP - SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)
+  - [OWASP Top 10](https://owasp.org/Top10/) - SQL Injection nella lista da oltre 20 anni
+  - [PortSwigger - SQL Injection Tutorial](https://portswigger.net/web-security/sql-injection)
+
+### Cross-Site Scripting (XSS)
+- **Cosa**: Iniezione di codice JavaScript malevolo nelle pagine web
+- **Fonti**:
+  - [OWASP - XSS](https://owasp.org/www-community/attacks/xss/)
+  - [PortSwigger - XSS Guide](https://portswigger.net/web-security/cross-site-scripting)
+
+### CSRF (Cross-Site Request Forgery)
+- **Cosa**: Attacco che induce l'utente a eseguire azioni indesiderate su siti dove è autenticato
+- **Fonti**:
+  - [OWASP - CSRF](https://owasp.org/www-community/attacks/csrf)
+  - [PortSwigger - CSRF Tutorial](https://portswigger.net/web-security/csrf)
+
+### Attacchi WordPress
+- **Cosa**: Bot automatizzati che sfruttano vulnerabilità di WordPress e plugin
+- **Fonti**:
+  - [WPScan - Vulnerability Database](https://wpscan.com/) - 50.000+ vulnerabilità catalogate
+  - [Wordfence - WordPress Security](https://www.wordfence.com/)
+  - [Sucuri - WordPress Security Blog](https://blog.sucuri.net/category/wordpress-security/)
+  - [Patchstack - WordPress Vulnerability Stats](https://patchstack.com/whitepaper/state-of-wordpress-security-in-2024/)
+
+### MOVEit (SQL Injection 2023)
+- **Cosa**: Attacco SQL injection che ha colpito 2.500+ organizzazioni e 65+ milioni di persone
+- **Fonti**:
+  - [CISA - MOVEit Advisory](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a)
+  - [KrebsOnSecurity - MOVEit Breach](https://krebsonsecurity.com/tag/moveit/)
+
+---
+
 ## Risorse Istituzionali
 
 ### Segnalazione e Supporto

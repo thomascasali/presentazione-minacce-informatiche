@@ -2,6 +2,7 @@ export { default as introduzione } from './introduzione.jsx'
 export { default as phishing } from './phishing.jsx'
 export { default as malware } from './malware.jsx'
 export { default as trojan } from './trojan.jsx'
+export { default as attacchiWeb } from './attacchi-web.jsx'
 export { default as protezione } from './protezione.jsx'
 export { default as quiz } from './quiz.jsx'
 
@@ -10,6 +11,7 @@ export const moduleOrder = [
   'phishing',
   'malware',
   'trojan',
+  'attacchiWeb',
   'protezione',
   'quiz',
 ]
@@ -46,6 +48,14 @@ export const modulesMeta = {
     icon: '🐴',
     className: 'trojan',
     badge: 'trojan',
+  },
+  attacchiWeb: {
+    id: 'attacchiWeb',
+    title: 'Attacchi Web',
+    description: 'SQL Injection, XSS, CSRF e attacchi a WordPress: come i criminali sfruttano le vulnerabilità delle applicazioni web.',
+    icon: '🌐',
+    className: 'attacchi-web',
+    badge: 'attacchi-web',
   },
   protezione: {
     id: 'protezione',

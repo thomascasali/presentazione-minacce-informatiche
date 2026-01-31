@@ -34,7 +34,7 @@ presentazione-minacce-informatiche/
 
 ## Contenuti della Presentazione
 
-La presentazione e organizzata in **6 moduli indipendenti** (~52 slide totali):
+La presentazione e organizzata in **7 moduli indipendenti** (~60 slide totali):
 
 | Modulo | Slide | Contenuto |
 |--------|-------|-----------|
@@ -42,6 +42,7 @@ La presentazione e organizzata in **6 moduli indipendenti** (~52 slide totali):
 | **Phishing** | 10 | Varianti, caso Aruba (demo email), campagne italiane (Agenzia Entrate, INPS, PosteInfo) |
 | **Malware** | 10 | Tipologie, caso WannaCry, ransomware italiani (ASL Abruzzo, Regione Lazio, Westpole) |
 | **Trojan** | 11 | Caso Emotet, trojan italiani (Ursnif, sLoad via PEC), spyware Paragon-Graphite 2025 |
+| **Attacchi Web** | 8 | SQL Injection, XSS, CSRF, Brute Force, IDOR, attacchi WordPress/SEO spam |
 | **Protezione** | 10 | 2FA, password sicure, aggiornamenti, backup 3-2-1, checklist interattiva |
 | **Quiz** | 3 | 8 domande interattive con feedback e punteggio finale |
 
