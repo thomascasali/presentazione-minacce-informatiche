@@ -71,6 +71,16 @@ Questo documento contiene le fonti verificate per tutti gli esempi di cybersecur
   - [Agenzia delle Entrate - Focus Phishing](https://www.agenziaentrate.gov.it/portale/focus-sul-phishing/segnalazioni-e-approfondimenti)
   - [CERT-AgID - Phishing Agenzia Entrate](https://cert-agid.gov.it/news/campagna-di-phishing-agenzia-entrate-e-riscossione/)
 
+### Truffa 18app / Bonus Cultura (SPID)
+- **Cosa**: Criminali creavano SPID falsi a nome di neo-diciottenni per rubare i €500 del Bonus Cultura
+- **Dettagli**: Oltre 2.500 SPID irregolari, ~2.000 voucher truccati, €400.000 di danno all'Erario
+- **Fonti**:
+  - [Il Fatto Quotidiano - Bonus 18App SPID clonato](https://www.ilfattoquotidiano.it/2024/02/16/bonus-18app-spid-clonato-e-giovani-derubati-centinaia-di-casi-confconsumatori-invia-contestazione-al-governo-zero-controlli/7448153/)
+  - [TgCom24 - Frode Bonus Cultura con SPID irregolari](https://www.tgcom24.mediaset.it/cronaca/frode-bonus-cultura-truffa-online-hacker-spid_104356564-202502k.shtml)
+  - [QuiFinanza - SPID irregolari e truffa bonus cultura](https://quifinanza.it/attualita/spid-irregolari-bonus-cultura-truffa/914468/)
+  - [Confconsumatori - Truffe a raffica per diciottenni](https://www.confconsumatori.it/bonus-cultura-truffe-a-raffica-per-i-diciottenni/)
+  - [Federprivacy - Falla nel sistema identità digitali](https://www.federprivacy.org/informazione/societa/la-truffa-del-bonus-cultura-evidenzia-una-falla-enorme-nel-sistema-delle-identita-digitali)
+
 ### INPS
 - **Cosa**: False email/SMS per aggiornamento profilo e furto SPID
 - **Fonti**:

@@ -258,7 +258,7 @@ const slides = [
         <motion.ul className="slide-list" variants={fadeUp} initial="hidden" animate="visible" custom={3}>
           <li>
             <span className="list-icon"><FiUsers /></span>
-            <span><strong>Identità digitale:</strong> Furti di SPID per accedere a servizi PA, modificare IBAN e ricevere rimborsi altrui</span>
+            <span><strong>Identità digitale:</strong> <a href="https://www.ilfattoquotidiano.it/2024/02/16/bonus-18app-spid-clonato-e-giovani-derubati-centinaia-di-casi-confconsumatori-invia-contestazione-al-governo-zero-controlli/7448153/" target="_blank" rel="noopener noreferrer">Truffa 18app</a>: criminali creavano SPID falsi a nome di neo-diciottenni per rubare i €500 del Bonus Cultura. Oltre 2.500 SPID irregolari scoperti.</span>
           </li>
           <li>
             <span className="list-icon"><FiGlobe /></span>
