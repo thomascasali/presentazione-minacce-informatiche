@@ -1,5 +1,7 @@
 # Minacce Informatiche - Presentazione Interattiva
 
+**[Visualizza la presentazione online](https://thomascasali.github.io/presentazione-minacce-informatiche/)**
+
 Materiale didattico completo sulle minacce informatiche: una presentazione React interattiva con animazioni, esempi reali e quiz, accompagnata da schede per giochi di ruolo.
 
 ## Struttura del Repository
@@ -15,6 +17,7 @@ presentazione-minacce-informatiche/
 │   │   ├── phishing.jsx
 │   │   ├── malware.jsx
 │   │   ├── trojan.jsx
+│   │   ├── attacchi-web.jsx
 │   │   ├── protezione.jsx
 │   │   └── quiz.jsx
 │   ├── pages/
